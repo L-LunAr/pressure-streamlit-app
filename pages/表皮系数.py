@@ -3,8 +3,8 @@ import plotly.graph_objects as go
 import streamlit as st
 import pandas as pd
 import numpy as np
-excel_file_path1 = r'D:\LunAr-chengxu\jupyter-L\1DNN-LSTM-Att-3y.xlsx'
-excel_file_path2=r'D:\LunAr-chengxu\jupyter-L\y_test10000.xlsx'
+excel_file_path1 = '1DNN-LSTM-Att-3y.xlsx'
+excel_file_path2='y_test10000.xlsx'
 predict_y= pd.read_excel(excel_file_path1)# 指定Excel文件路径
 real_y=pd.read_excel(excel_file_path2)# 指定Excel文件路径
 y_predict1_1 = predict_y[0]
