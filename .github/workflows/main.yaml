@@ -1,4 +1,5 @@
 - name: Install dependencies
-  run: pip cache purge 
-       pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-       pip install --upgrade pip
+  run: |
+    pip cache purge
+    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install --upgrade pip
