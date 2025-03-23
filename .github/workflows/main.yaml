@@ -1,5 +1,31 @@
-- name: Install dependencies
-  run: |
-    pip cache purge
-    pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-    pip install --upgrade pip
+name: Python application
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.12
+
+      - name: Install dependencies
+        run: |
+          pip cache purge
+          pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+          pip install --upgrade pip
+
+      - name: Run the application
+        run: |
+          # 这里假设你的 Streamlit 应用入口文件是 app.py，你需要根据实际情况修改
+          streamlit run 数据.py
