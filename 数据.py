@@ -14,7 +14,7 @@ st.title('均质油藏压力和压力导数数据')
 def load_data(start, end):
     # 这里假设你想加载从start到end行的数据
     # 由于pandas的read_csv没有直接支持范围的参数，这里分步骤处理
-    data = pd.read_excel(DATA_URL)
+    data = pd.ExcelFile(DATA_URL)
     data = data[start:end]
     data = np.array(data)
     data = data[:, 1:]
