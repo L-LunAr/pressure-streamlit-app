@@ -5,8 +5,8 @@ import pandas as pd
 import numpy as np
 excel_file_path1 = '1DNN-LSTM-Att-3y.xlsx'
 excel_file_path2='y_test10000.xlsx'
-predict_y=pd.ExcelFile(excel_file_path1)# 指定Excel文件路径
-real_y=pd.ExcelFile(excel_file_path2)# 指定Excel文件路径
+predict_y=pd.read_excel(excel_file_path1)# 指定Excel文件路径
+real_y=pd.read_excel(excel_file_path2)# 指定Excel文件路径
 y_predict1_1 = predict_y[0]
 y_predict1_2 = predict_y[1]
 y_predict1_3= predict_y[2]
