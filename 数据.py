@@ -62,7 +62,7 @@ if not getattr(st.session_state, 'logged_in', False):
 else:
     # 如果用户已登录，显示数据
     data_load_state = st.text('正在加载数据...')
-    data = load_data(1000000,2000000)#加载1000000到2000000之间的数据
+    data = load_data(0,500)#加载0到500之间的数据
     data_load_state.text("Done! (using data)")
 
     if st.checkbox('显示压力和压力导数数据'):
