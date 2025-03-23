@@ -66,7 +66,7 @@ else:
     st.write(
         """测试集数据注意力权重得分值取平均，展示128个特征数据点注意力权重得分值,每25个得分数据展示一次折线图！"""
     )
-    excel_file_path = r'D:\LunAr-chengxu\jupyter-L\1DNN-LSTM_att_3ymodel_Top25Values_.xlsx'
+    excel_file_path = '1DNN-LSTM_att_3ymodel_Top25Values_.xlsx'
     # 初始化进度条和状态文本
     progress_bar = st.sidebar.progress(0)
     status_text = st.sidebar.empty()
