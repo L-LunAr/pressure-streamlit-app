@@ -14,7 +14,7 @@ excel_file_path = '1DNN-LSTM_att_3ymodel_Top25Values_.xlsx'
 # 初始化进度条和状态文本
 progress_bar = st.sidebar.progress(0)
 status_text = st.sidebar.empty()
-data_att=pd.ExcelFile(excel_file_path,sheet_name='average_top_128_values_')
+data_att=pd.read_excel(excel_file_path,sheet_name='average_top_128_values_')
 # 模拟数据处理过程
 # 模拟数据处理过程
 for i in range(1, 101):  # 用500个测试数据
