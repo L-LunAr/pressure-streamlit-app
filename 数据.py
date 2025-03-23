@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 #from pymysql import connect
 #import pymysql
-DATA_URL="shuju_total.csv"
+DATA_URL="shuju500.xlsx"
 #from pages import mysql_connect
 st.title('均质油藏压力和压力导数数据')
 @st.cache_data
