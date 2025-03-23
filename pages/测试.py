@@ -5,10 +5,10 @@ import pandas as pd
 import time
 import numpy as np
 excel_file_path20000= '1DNN-LSTM-Att-test-20000.xlsx'
-y_predict= pd.read_excel(excel_file_path20000)# 指定Excel文件路径
+y_predict=pd.ExcelFile(excel_file_path20000)# 指定Excel文件路径
 # 读取 Excel 文件
 excel_file_path20000='y_test20000.xlsx'
-y_test20000= pd.read_excel(excel_file_path20000)# 指定Excel文件路径
+y_test20000=pd.ExcelFile(excel_file_path20000)# 指定Excel文件路径
 
 # 将四列真实值分别提取并保存到对应的列表中
 real_y1 = y_test20000[0]
