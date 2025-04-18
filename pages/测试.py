@@ -59,7 +59,7 @@ if not getattr(st.session_state, 'logged_in', False):
 else:
     st.set_page_config(page_title="油藏参数拟合效果", page_icon="📈")
     add_selectbox = st.sidebar.selectbox(
-        "选择均质油藏油藏参数",
+        "选择均质油藏参数",
         ("渗透率", "表皮系数", "井筒储集系数")
     )
 
